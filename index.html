@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form with Captcha</title>
+    <link rel="icon" href="pngegg.png">
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>Contact Form with Captcha</header>
+
+      <div class="login">
+        <input type="text" placeholder="Enter Name" required />
+        <input type="text" placeholder="Enter Gmail" required />
+        <input type="text" placeholder="Enter ID" required />
+        <input type="password" placeholder="Enter Password" required />
+        <textarea name="query" id="textarea" cols="52" rows="7" placeholder="Enter Query"></textarea>
+      </div>
+
+      <div class="input_field captch_box">
+        <input type="text" value="" disabled />
+        <button class="refresh_button">
+          <i class="uil uil-sync"></i>
+        </button>
+      </div>
+      <div class="input_field captch_input">
+        <input type="text" placeholder="Enter captcha" required />
+      </div>
+      <div class="message">Entered captcha is correct</div>
+      <div class="input_field button">
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
